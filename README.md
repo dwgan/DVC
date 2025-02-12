@@ -1,33 +1,24 @@
-# PyTorch Video Compression
-PyTorch implementation and benchmark of Video Compression
+# Environment configuration
 
-## Update
-* 2020.08.02: Upload Benchmark of the HEVC, UVG, MCL-JCV, VTL datasets.
-* 2020.08.01: Upload PyTorch implementation of [DVC: An End-to-end Deep Video Compression Framework](https://arxiv.org/abs/1812.00101)
+1. create conda environment
 
-## Benchmark
+```bash
+conda create -n dvc python=3.10
+```
+then activate conda environment
 
+```bash
+conda activate dvc
+```
 
-<!-- ### HEVC Class A dataset -->
-<!-- ![](Benchmark/HEVCresults/HEVCClass_A.png) -->
-### HEVC Class B dataset
-![](Benchmark/HEVCresults/HEVCClass_B.png)
-### HEVC Class C dataset
-![](Benchmark/HEVCresults/HEVCClass_C.png)
-### HEVC Class D dataset
-![](Benchmark/HEVCresults/HEVCClass_D.png)
-### HEVC Class E dataset
-![](Benchmark/HEVCresults/HEVCClass_E.png)
-### UVG dataset
-![](Benchmark/UVGresults/UVG.png)
-### MCL-JCV dataset
-![](Benchmark/MCLresults/MCL.png)
-<!-- ### VTL dataset -->
-<!-- ![](Benchmark/VTLresults/VTL.png) -->
+2. install torch 2.1.2, NVCC version == 12.1
 
+```bash
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=12.1 -c pytorch -c nvidia
+```
 
-# Contact
+3. install tensorflow
 
-If you want to add the results of your paper or have any questions, please file an issue or contact:
-
-    Zhihao Hu: huzhihao@buaa.edu.cn
+```bash
+pip install tensorflow
+```
